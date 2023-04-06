@@ -26,7 +26,6 @@ module.exports = {
   },
   entry: {
     content: `${PATHS.source}/content/index.jsx`,
-    // styles: `${PATHS.source}/content/index.scss`,
   },
   output: {
     path: PATHS.build,
