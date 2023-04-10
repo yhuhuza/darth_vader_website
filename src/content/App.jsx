@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.scss';
+import MainPage from "./components/MainPage.jsx";
 
 function App() {
 
 return (
   <div className={'main-div'}>
-    <div className={'test-styles'}>Hello Dima :)</div>
+    <MainPage />
   </div>
 );
 }

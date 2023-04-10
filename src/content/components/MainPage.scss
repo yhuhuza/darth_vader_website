@@ -1,0 +1,41 @@
+.main-page {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  &__anakin, &__vader {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+  &__anakin {
+    background: url("../../assets/anakin-background.jpeg") no-repeat;
+    &__figure {
+      position: absolute;
+      width: 800px;
+      height: 700px;
+      bottom: -8%;
+      left: 5%;
+    }
+  }
+  &__vader {
+    background: url("../../assets/vaider-background.jpeg") no-repeat;
+    &__figure {
+      position: absolute;
+      width: 800px;
+      height: 700px;
+      bottom: -4px;
+      right: -8%;
+    }
+  }
+  &__rebellion-sign,
+  &__empire-sign {
+    width: 200px;
+    height: 200px;
+    margin-top: 70px;
+  }
+}

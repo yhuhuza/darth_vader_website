@@ -112,7 +112,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        {from: 'static/'}
+        {from: 'static/'},
       ]
     }),
     new MiniCssExtractPlugin({filename: '[name]/styles.css'}),
