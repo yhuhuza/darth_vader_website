@@ -20,6 +20,12 @@
       height: 700px;
       bottom: -8%;
       left: 5%;
+      opacity: 0.8;
+      transition: all 1s ease-in-out;
+      &:hover {
+        opacity: 1;
+        transform: scale(1.2);
+      }
     }
   }
   &__vader {
@@ -30,6 +36,12 @@
       height: 700px;
       bottom: -4px;
       right: -8%;
+      opacity: 0.4;
+      transition: all 1s ease-in-out;
+      &:hover {
+        opacity: 1;
+        transform: scale(1.2);
+      }
     }
   }
   &__rebellion-sign,
