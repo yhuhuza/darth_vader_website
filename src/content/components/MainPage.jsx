@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import DarthVader from './DarthVader.jsx';
+
 import './MainPage.scss';
 import empireSign from '../../assets/empire-sign.png';
 import rebelionSign from '../../assets/rebelion-sign.png';
