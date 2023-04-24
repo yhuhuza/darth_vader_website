@@ -4,10 +4,12 @@ import { createBrowserRouter, RouterProvider, Router, Route } from "react-router
 
 import MainPage from './components/MainPage.jsx';
 import DarthVader from './components/DarthVader.jsx';
+import Anakin  from './components/Anakin.jsx';
 
 const router = createBrowserRouter([
   { path: '/', element: <MainPage /> },
-  { path: '/darthvader', element: <DarthVader /> },
+  { path: '/anakin', element: <Anakin /> },
+  { path: '/vader', element: <DarthVader /> },
 ]);
 
 
