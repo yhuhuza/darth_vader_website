@@ -11,7 +11,6 @@ const PATHS = {
 
 module.exports = {
   mode: process.env.NODE_ENV,
-  watch: process.env.NODE_ENV === 'development',
   optimization: {
     splitChunks: {
       cacheGroups: {
@@ -23,6 +22,9 @@ module.exports = {
       },
       name: false,
     },
+  },
+  devServer: {
+    historyApiFallback: true
   },
   entry: {
     content: `${PATHS.source}/content/index.jsx`,

@@ -1,0 +1,25 @@
+.anakin-history {
+    height: 100vh;
+    background: url("../../assets/anakin-background.jpeg") no-repeat;
+    &__quote {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__obis-quote {
+        font-family: "Distant Galaxy";
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+        padding-top: 100px;
+    }
+    &__history {
+        border: 1px solid red;
+    }
+    &__childhood {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+    }
+}
