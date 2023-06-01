@@ -115,6 +115,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {from: 'static/'},
+        {from: `${PATHS.source}/assets/fonts`, to: 'fonts'},
       ]
     }),
     new MiniCssExtractPlugin({filename: '[name]/styles.css'}),
