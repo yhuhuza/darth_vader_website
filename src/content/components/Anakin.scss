@@ -1,25 +1,113 @@
+@import '../fonts.scss';
+
 .anakin-history {
     height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    // overflow: hidden; // GOVNO BLYAT
+    z-index: -1;
+}
+
+.tatuinBackground,
+.sadVader {
+    position: absolute;
+    object-fit: cover;
+}
+
+.sadVader {
+    width: 200vh;
+}
+
+.tatuinBackground {
+    width: 100%;
+    height: 100vh;
+    background: url("../../assets/vaider-background.jpeg") no-repeat;
+    transform: translateZ(-10px) scale(2);
+}
+
+.sadVader {
+    transform: translateZ(-5px) scale(1.5);
+}
+
+.quote {
+    font-size: 28px;
+    width: 900px;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    position: absolute;
+    top: 35vh;
+    right: 20vh;
+    font-weight: 800;
+}
+
+section {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    // z-index: -2;
+    perspective: 500px;
+}
+
+.sec-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
     background: url("../../assets/anakin-background.jpeg") no-repeat;
-    &__quote {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    &__obis-quote {
-        font-family: "Distant Galaxy";
-        font-size: 18px;
-        font-weight: 600;
-        margin: 0;
-        padding-top: 100px;
-    }
-    &__history {
-        border: 1px solid red;
-    }
-    &__childhood {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 50px;
-    }
+}
+
+.yong-anakin {
+    position: absolute;
+    top: 15vh;
+    left: 5vh;
+    transform: translateZ(-10px) scale(1.25);
+}
+
+.robots-tatuin {
+    position: absolute;
+    right: 2vh;
+    bottom: 15vh;
+    width: 150px;
+    z-index: 2;
+    transform: rotate(-9deg);
+    transform: translateZ(-5px) scale(1.2);
+}
+
+.tatuin-planet {
+    position: absolute;
+    right: -25vh;
+    bottom: -20vh;
+    width: 600px;
+    transform: translateZ(-5px) scale(1.2);
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    // overflow: hidden; // GOVNO BLYAT
+    z-index: -1;
+}
+
+.footer {
+    width: 100%;
+    height: 100vh;
+    background: url("../../assets/landscape.png") no-repeat;
 }
