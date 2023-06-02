@@ -8,7 +8,10 @@ import tatuinPlanet from '../../assets/tatuin-planet.png';
 import sadVader from '../../assets/sad-vader.png';
 import youngAnakin from '../../assets/yong-anakin.png';
 import robotsTatuin from '../../assets/robots-tatuin.png';
-import landscape from '../../assets/landscape.png';
+import anakinChildBack from '../../assets/anakin-child-back.jpg';
+// import landscape from '../../assets/landscape.png';
+import chortFigure from '../../assets/chort.png';
+import starBack from '../../assets/star-back.jpg';
 // import anakinSword from '../../assets/anakin-sword.png'
 
 function AnakinSkywalker() {
@@ -26,14 +29,19 @@ function AnakinSkywalker() {
           </p>
         </header>
         <section>
-          <div className={'sec-section'}></div>
+          <img src={anakinChildBack} className={'sec-section'}/>
           <img src={youngAnakin} className={'yong-anakin'}></img>
           <img src={robotsTatuin} className={'robots-tatuin'}></img>
           <img src={tatuinPlanet} className={'tatuin-planet'}></img>
+          <img src={chortFigure} className={'chort-figure'}></img>
         </section>
         <footer>
-          <img src={landscape} className={'footer'}></img>
+          <img src={starBack}></img>
         </footer>
+        {/* <footer>
+          <div className={'anakinTeen'}></div>
+          {/* <img src={landscape} className={'footer'}></img> */}
+        {/* </footer> */}
         
 
         {/* <div className={'anakin-history__container'}>
